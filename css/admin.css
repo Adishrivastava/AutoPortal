@@ -1,0 +1,74 @@
+label {
+  margin-top: 10px;
+}
+
+tbody td {
+  background-color: #d2f9fa;
+}
+
+thead {
+  background-color: #9dcdca;
+}
+
+#mail-info form {
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+#mail-info label {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#mail-info .in {
+  border: none;
+  outline: none;
+  border-bottom: 1.1px solid #17273e;
+  border-radius: 0;
+  width: 100%;
+  color: #04557d;
+}
+
+.model-body .form-check-label {
+  margin-top: 0;
+}
+
+.check {
+  font-weight: 600;
+}
+
+#stockform label {
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#verified-show {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#verified-show .form-group {
+  margin: 5%;
+}
+
+#verified-show .inspection-label {
+  margin-bottom: 10px;
+}
+
+#verified-show .inspection-label label {
+  font-weight: 600;
+}
+
+#verified-show .inspection-label .btn {
+  float: right;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+#selectedFiles img {
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=admin.css.map */

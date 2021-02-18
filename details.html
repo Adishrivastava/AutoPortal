@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Autoportalind</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="css/flaticon.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<!-- <link rel="stylesheet" href="scss/demo.css" /> -->
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/demo.css" />
+
+	<style>
+		*,
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		.media {
+			background-color: rgb(168, 246, 246);
+		}
+	</style>
+</head>
+
+<body>
+	<header role="banner" style="position: fixed; top: 0; left: 0; right: 0;" style="z-index: 10000;">
+		<nav class="navbar navbar-expand-lg navbar-light p-2 pl-5 pr-lg-5"
+			style="z-index: 10000; position: relatiev; left: 0;">
+			<a class="navbar-brand" style="color: white;" href="#">Autoportal</a>
+			<a href="#footer" style="position: absolute; right: 40px;">
+				<button class="btn btn-outline-light" type="submit">
+					CONTACT US
+				</button>
+			</a>
+		</nav>
+	</header>
+
+	<div class="container pt-5">
+		<div class="row">
+			<h3 class="text-center m-5" id="car" style="width: 100%; font-weight: 700; font-size: 3.5em;"></h3>
+		</div>
+		<div class="row">
+			<!-- ================== image carousal ========================= -->
+			<div class="col-lg-6 col-md-6 pl-0 pr-0 ml-0 mb-4">
+				<div id="carouselExampleIndicators" class="carousel slide mb-4 p-3" data-ride="carousel">
+					<ol class="carousel-indicators" id="indicator-images" style="
+								display: flex;
+								flex-wrap: wrap;
+								flex-direction: row;
+								justify-items: auto;
+								width: 100%;
+								margin: 0;
+								height: 70px;
+								background-color: rgba(222, 221, 221, 0.924);
+								z-index: 1 !important;
+							"></ol>
+					<div class="carousel-inner" id="stock-images">
+						<div class="carousel-item active">
+							<img src="" id="firstimg" class="d-block w-100" alt="..." />
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 form-col">
+				<!-- ================== buyer form ============= -->
+				<form method="get" id="buyer-form" class="form-details">
+					<h2 class="text-center text-primary" style="font-weight: 600;">
+						LIKED THE CAR
+					</h2>
+					<p class="text-center mb-3">Enter the details</p>
+					<div class="form-group pl-5 pr-5">
+						<input type="text" name="name" class="form-control p-3" placeholder="Enter your name" required />
+					</div>
+					<div class="form-group pl-5 pr-5">
+						<input type="email" name="email" class="form-control p-3" placeholder="Enter email address"
+							required />
+					</div>
+					<div class="form-group pl-5 pr-5">
+						<input type="char" name="mobile" class="form-control p-3" placeholder="Enter your number" required />
+					</div>
+					<div class="form-group pl-5 pr-5">
+						<input type="char" name="location" class="form-control p-3" placeholder="Enter your location"
+							required />
+					</div>
+					<button class="btn btn-info" name="buyer-submit" style="display: block; margin: 0 auto;">
+						SUBMIT THE DETAILS
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="container-fluid mar">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="col-md-12" style="font-weight: bold; font-size: 2em; color: black;">
+						overview
+					</div>
+					<ul class="row" id="overview" style="list-style: none;">
+						<li class="col-md-3">
+							<label for="" style="margin: 0em; color: black; font-weight: 700;">location</label>
+							<p id="location"></p>
+						</li>
+						<li class="col-md-3">
+							<label for="">Year</label>
+							<p id="age"></p>
+						</li>
+						<li class="col-md-3">
+							<label for="" style="margin: 0em;">Fuel type</label>
+							<p id="fuel"></p>
+						</li>
+						<li class="col-md-3">
+							<label for="" style="margin: 0em;">Km driven</label>
+							<p id="kms"></p>
+						</li>
+						<!-- <li class="col-md-3">
+								<label for="" style="margin: 0em;">year</label>
+								<p>sadfsfs</p>
+							</li>
+							<li class="col-md-3">
+								<label for="" style="margin: 0em;">year</label>
+								<p>sadfsfs</p>
+							</li>
+							<li class="col-md-3">
+								<label for="" style="margin: 0em;">year</label>
+								<p>sadfsfs</p>
+							</li>
+							<li class="col-md-3">
+								<label for="" style="margin: 0em;">year</label>
+								<p>sadfsfs</p>
+							</li> -->
+
+					</ul>
+					<!-- <span
+						class="text-center fifty col-md-3 col-sm-3 col-lg-3 pt-5"
+						style="font-weight: 600;"
+						id="location"
+					>
+					</span>
+					<span
+						class="text-center fifty col-md-3 pt-4"
+						style="font-weight: 600;"
+						id="age"
+					>
+					</span>
+					<span
+						class="text-center fifty col-md-3 pt-4"
+						style="font-weight: 600;"
+						id="fuel"
+					>
+					</span>
+					<span
+						class="text-center fifty col-md-3 pt-4"
+						style="font-weight: 600;"
+						id="ful"
+					></span> -->
+
+				</div>
+				<div class="col-md-4">
+					<div class="text-primary text-center"
+						style="font-weight: 700; flex: 3; font-size: 2.2em;width: 100%;text-align: center;" id="price">
+						&#x20b9;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<!-- ======= F.A.Q Section ======= -->
+				<section id="faq-details" class="faq section-bg">
+					<div class="container mt-5 mb-5">
+						<h1 class="text-center text-black mb-5" id="verify" style="font-weight: 600; font-size: 2.3em;">
+							Inspection Report & Expert verdict
+						</h1>
+
+						<div class="faq-list p-0">
+							<ul>
+								<li data-aos="fade-up" data-aos-delay="100">
+									<div class="row">
+										<a data-toggle="collapse" href="#faq-list-1"
+											class="collapsed col-md-7 col-sm-7 col-lg-7 pl-5">Exterior
+
+											<i class="bx bx-chevron-down icon-show"></i><i
+												class="bx bx-chevron-up icon-close"></i></a>
+										<div style="float: right;" id="exdiv" class="col-md-5 col-lg-5 col-sm-5 pl-5">
+											<span class="fa fa-star"> </span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+									</div>
+
+									<div id="faq-list-1" class="collapse pl-5" data-parent=".faq-list"></div>
+								</li>
+
+								<li data-aos="fade-up" data-aos-delay="200">
+									<div class="row">
+										<a data-toggle="collapse" href="#faq-list-2"
+											class="collapsed col-md-7 col-sm-7 col-lg-7 pl-5">Interior and Electrical
+
+											<i class="bx bx-chevron-down icon-show"></i><i
+												class="bx bx-chevron-up icon-close"></i></a>
+										<div style="float: right;" class="col-md-5 col-lg-5 col-sm-5 pl-5" id="indiv">
+											<span class="fa fa-star"> </span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+									</div>
+
+									<div id="faq-list-2" class="collapse pl-5" data-parent=".faq-list"></div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="200">
+									<div class="row">
+										<a data-toggle="collapse" href="#faq-list-3"
+											class="collapsed col-md-7 col-sm-7 col-lg-7 pl-5">Engine + Transmission
+
+											<i class="bx bx-chevron-down icon-show"></i><i
+												class="bx bx-chevron-up icon-close"></i></a>
+										<div style="float: right;" class="col-md-5 col-lg-5 col-sm-5 pl-5" id="endiv">
+											<span class="fa fa-star"> </span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+									</div>
+									<div id="faq-list-3" class="collapse pl-5" data-parent=".faq-list"></div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="200">
+									<div class="row">
+										<a data-toggle="collapse" href="#faq-list-4"
+											class="collapsed col-md-7 col-sm-7 col-lg-7 pl-5">Air conditioning
+
+											<i class="bx bx-chevron-down icon-show"></i><i
+												class="bx bx-chevron-up icon-close"></i></a>
+										<div style="float: right;" class="col-md-5 col-lg-5 col-sm-5 pl-5" id="airdiv">
+											<span class="fa fa-star"> </span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+									</div>
+
+									<div id="faq-list-4" class="collapse pl-5" data-parent=".faq-list"></div>
+								</li>
+								<li data-aos="fade-up" data-aos-delay="200">
+									<div class="row">
+										<a data-toggle="collapse" href="#faq-list-5"
+											class="collapsed col-md-7 col-sm-7 col-lg-7 pl-5">Steering and suspension
+
+											<i class="bx bx-chevron-down icon-show"></i><i
+												class="bx bx-chevron-up icon-close"></i></a>
+										<div style="float: right;" class="col-md-5 col-lg-5 col-sm-5 pl-5" id="stdiv">
+											<span class="fa fa-star"> </span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+									</div>
+
+									<div id="faq-list-5" class="collapse pl-5" data-parent=".faq-list"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- End F.A.Q Section -->
+			</div>
+
+			<div class="col-lg-4 col-md-4 p-5">
+				<div class="cont mt-5">
+					<div class="row ml-1 mr-1">
+						<p>rate<div style="position: relative; left:20px;" id="ratetext"></div>
+						</p>
+
+					</div>
+					<div id="bar1" style="
+								border-radius: 10px;
+								height: 8px;
+								background-color: rgb(245, 194, 11);
+							"></div>
+				</div>
+				<div class="cont mt-3">
+					<div class="row ml-1 mr-1">
+						<p>tenure</p>
+						<div style="position: relative; left: 20px;" id="tenuretext"></div>
+					</div>
+					<div id="bar2" style="
+								border-radius: 10px;
+
+								height: 8px;
+								background-color: rgb(245, 194, 11);
+							"></div>
+				</div>
+				<div class="cont mt-3">
+					<p>calculated EMI <span id="emitext" style="padding-left:20px"></span></p>
+				</div>
+			</div>
+
+			<!-- other cars section ---------------------------------------- -->
+
+			<div class="container">
+				<h2 class="text-center text-black mt-3 p-5">
+					YOU MIGHT ALSO LIKE
+				</h2>
+
+			</div>
+		</div>
+	</div>
+	<!-- Top content -->
+	<div class="top-content" id="bottom" style="max-height: 400px;overflow-y: hidden;">
+		<div class="container-fluid">
+			<div id="carousel-example" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner infinity-inner row w-100 mx-auto" id="suggestions" role="listbox">
+
+					<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+						<div class="media d-block media-feature text-center"><img src="" style="width: 100%; height: 160px;" id="img1"
+								alt="">
+							<div class="media-body">
+								<h3 class="mt-3 text-black" style="font-size: 1.4em;" id="brand1">
+
+								</h3>
+								<p class="mt-3"><span id="age1">YEARS </span> <span class="" id="kms1">km</span></p>
+								<p class="mb-0"><a href="details.html?name=' +
+															doc.id +
+															'" class="btn btn-primary">Veiw full details</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer bg-dark" id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mt-5">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14667.917582582984!2d79.9471031!3d23.2074215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1584878071402!5m2!1sen!2sin"
+						style="height: 30vh; display: block; margin: 0 auto;" frameborder="none"></iframe>
+				</div>
+				<div class="col-md-6 mt-5">
+					<ul class="list-unstyled footer-link pl-4">
+						<li>
+							<span class="mr-3 d-block">Address:</span><span class="text-white"></span>
+						</li>
+						<li>
+							<span class="mr-3 d-block">Phone:</span><span class="text-white"></span>
+						</li>
+						<li>
+							<span class="mr-3 d-block">Fax:</span><span class="text-white"></span>
+						</li>
+						<li>
+							<span class="mr-3 d-block">E-mail:</span><span class="text-white"></span>
+						</li>
+					</ul>
+					<h3 class="text-white text text-center">Social</h3>
+					<ul class="list-unstyled footer-link d-flex footer-social justify-content-center">
+						<li>
+							<a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+						</li>
+						<li>
+							<a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+						</li>
+						<li>
+							<a href="#" class="p-2"><span class="fa fa-linkedin"></span></a>
+						</li>
+						<li>
+							<a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END footer -->
+	<!-- javascript files -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+	<!-- connecting with firebase database -->
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: 'AIzaSyD9xsVwscXv_Lh81Q0sKdrW3N4VBE7bAys',
+			authDomain: 'autoportalind-4b037.firebaseapp.com',
+			databaseURL: 'https://autoportalind-4b037.firebaseio.com',
+			projectId: 'autoportalind-4b037',
+			storageBucket: 'autoportalind-4b037.appspot.com',
+			messagingSenderId: '721545600267',
+			appId: '1:721545600267:web:c1beaa0e9552a45334960e',
+			measurementId: 'G-SNR6KY2F6T',
+		};
+
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+		const db = firebase.firestore();
+	</script>
+
+	<script src="js/details.js"></script>
+
+	<script>
+
+		$('#carousel-example').on('slide.bs.carousel', function (e) {
+			/*
+				CC 2.0 License Iatek LLC 2018 - Attribution required
+			*/
+			var $e = $(e.relatedTarget);
+			var idx = $e.index();
+			var itemsPerSlide = 5;
+			var totalItems = $('.carousel-item').length;
+
+			if (idx >= totalItems - (itemsPerSlide - 1)) {
+				var it = itemsPerSlide - (totalItems - idx);
+				for (var i = 0; i < it; i++) {
+					// append slides to end
+					if (e.direction == "left") {
+						$('.carousel-item').eq(i).appendTo('.carousal-inner');
+					}
+					else {
+						$('.carousel-item').eq(0).appendTo('.carousal-inner');
+					}
+				}
+			}
+		});
+	</script>
+	<!-- <script src="js/app.js"></script>      -->
+</body>
+
+</html>

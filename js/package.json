@@ -1,0 +1,14 @@
+{
+  "name": "nodemail",
+  "version": "1.0.0",
+  "description": "mailing through nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "aditya",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.4.6"
+  }
+}
